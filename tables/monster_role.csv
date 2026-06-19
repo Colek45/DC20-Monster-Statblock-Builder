@@ -1,0 +1,7 @@
+Role,HP Modifier,Damage Modifier,Average Defenses, Trait Value
+Brute,25%,25%,-4,0 
+Defender,0,-25%,2,-4 
+Leader,0,-25%,- 4 
+Soldier,0,0,0,0 
+Striker,-25%,50%,-2,0 
+Tactician,-25%,-25%,0,8 
