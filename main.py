@@ -1,5 +1,7 @@
 from tkinter import *
 import pandas as pd
+from data_retrieval import load_hp
+from classes import Monster, Action, Trait
 
 creatureTypes = ['Aberration','Beast', 'Celestial', 'Construct', 'Dragon', 'Elemental', 'Fey', 'Fiend','Giant', 'Humanoid', 'Monstrosity', 'Ooze', 'Plant', 'Undead']
 damageTypes = ['Bludgeoning', 'Cold', 'Corrosion', 'Fire', 'Lightning', 'Piercing', 'Poison', 'Psychic', 'Radiant', 'Slashing', 'True', 'Umbral']
@@ -58,6 +60,18 @@ monsterRoleLabel.grid(row=0, column=0, sticky='w')
 monsterRoleMenu.grid(row=1, column=0, sticky='w')
 monsterRoleFrame.grid(row=0, column=5, sticky='w', padx=20, pady=5)
 monsterInfoFrame.grid(row=0, column=0, sticky='w')
+monsterStatsFrame = Frame(parent)
+monsterHPFrame = Frame(monsterStatsFrame)
+monsterHPLabel = Label(monsterHPFrame, text="HP:")
+monsterHPValue = Entry(monsterHPFrame, text="")
+monsterHP = IntVar(monsterHPFrame, value=0)
+monsterHPValue.insert(0, load_hp(monsterLevelOption.get(), monsterRoleOption.get(), monsterTierOption.get(), []))
+monsterHPLabel.grid(row=0, column=0, sticky='w')
+monsterHPValue.grid(row=1, column=0, sticky='w')
+monsterHPFrame.grid(row=0, column=0, sticky='w')
+monsterStatsFrame.grid(row=1, column=0, sticky='w')
+testButton = Button(parent, text="Test Monster HP", command=lambda: print(load_hp(monsterLevelOption.get(), monsterRoleOption.get(), monsterTierOption.get(), [])))
+testButton.grid(row=2, column=0, sticky='w')
 parent.mainloop()
 
 #default stats are 3/2/0/0

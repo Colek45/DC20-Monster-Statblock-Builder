@@ -42,3 +42,11 @@ class Action:
         self.description = description
         self.damage = damage
         self.damage_type = damage_type
+
+class Trait:
+    def __init__(self, name, trait_points, description, bonus, category):
+        self.name = name
+        self.trait_points = trait_points
+        self.description = description
+        self.bonus = bonus
+        self.category = category

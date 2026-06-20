@@ -1,42 +1,42 @@
-Name,Trait Points,Description,Category,Source
-Enrage,4,"Once you become Bloodied, gain +1 damage on all Attacks",Offense,Monster Collection
-Opportunist,2,"Deal +1 on Heavy Hits to creatures affected by at least one Condition.",Offense,Monster Collection
-Pack Tactics,2,"Gain an additional +2 bonus to Attacks while Flanking a creature.",Offense,Monster Collection
-Unrelenting,2,"The only way you can be reduced below 1 HP is by a Heavy Hit or an Attack that deals Radiant damage.",Defense,Monster Collection
-Regeneration,2,"Heal 1 HP at the start of each of your turns.",Defense,Monster Collection
-Death's Door,2,"This monster can use the Death's Door mechanic like PCs, making near-fatal situations more dramatic and strategic.",Defense,Monster Collection
-Shot Caller,2,"When you use the Help Action on another creature, its next Attack deals +1 damage.",Utility,Monster Collection
-Inspire,2,"Once per turn, give a Help Die to an allied creature for free.",Utility,Monster Collection
-False Appearance,4,"While motionless, you're indistinguishable from a specified object.",Utility,Monster Collection
-Attribute Increase,2,"Attribute Increase: +1 to 1 Attribute (up to Prime Modifier).",Statistics,Monster Collection
-Attribute Decrease,-2,"Attribute Decrease: -1 to 1 Attribute (minimum of -5).",Statistics,Monster Collection
-Damage Increase,4,"The damage increases based on its Level as shown in the Damage Change Table. This is roughly a 25% increase in damage.",Statistics,Monster Collection
-Damage Decrease,-4,"The damage decreases based on its Level as shown in the Damage Change Table. This is roughly a 25% decrease in damage.",Statistics,Monster Collection
-HP Increase,4,"+25% HP",Statistics,Monster Collection
-HP Decrease,-4,"-25% HP",Statistics,Monster Collection
-Defense Increase,1,"+1 to 1 Defense",Statistics,Monster Collection
-Defense Decrease,-1,"-1 to 1 Defense",Statistics,Monster Collection
-Speed Increase,1,"+3 Speed",Movement,Monster Collection
-Speed Decrease,-1,"-1 Speed",Movement,Monster Collection
-Fly Speed,4,"Fly Speed equal to Speed",Movement,Monster Collection
-Burrow Speed,4,"Burrow Speed equal to Speed",Movement,Monster Collection
-Swim Speed,2,"Swim Speed equal to Speed and can breath underwater",Movement,Monster Collection
-Climb Speed,2,"Climb Speed equal to Speed and Resistance (Half) to Falling Damage",Movement,Monster Collection
-Truewalk,2,"You can walk normally on solid surfaces regardless of their orientation (such as upside down on the ceiling) without falling or needing to Climb.",Movement,Monster Collection
-Incorporeal,2,"You can move through solid objects and creatures. If you end your turn inside an object or creature, you take True damage equal to 25% of your maximum HP.",Movement,Monster Collection
-Darkvision,1,"Darkvision 10 Spaces",Senses,Monster Collection
-Tremorsense,2,"Tremorsense 3 Spaces",Senses,Monster Collection
-Blindsight,2,"Blindsight 3 Spaces",Senses,Monster Collection
-Truesight,4,"Truesight 10 Spaces",Senses,Monster Collection
-Damage Reduction,1,"Damage Reduction to Physical, Elemental, or Mystical damage.",Damage Mitigation,Monster Collection
-Resistance,2,"Resistance (Half) to 1 damage type.",Damage Mitigation,Monster Collection
-Vulnerability,-2,"Vulnerability (Double) to 1 damage type.",Damage Mitigation,Monster Collection
-Immunity,4,"Immunity to 1 damage type.",Damage Mitigation,Monster Collection
-Absorption,8,"Immunity to 1 damage type and regain HP equal to 1/2 damage.",Damage Mitigation,Monster Collection
-ADV on Skill Checks,1,"ADV on 1 Skill Check (such as Awareness, Athletics, or Trickery).",Checks & Saves,Monster Collection
-DisADV on Skill Checks,-1,"DisADV on 1 Skill Check (such as Awareness, Athletics, or Trickery).",Checks & Saves,Monster Collection
-ADV on Attribute Save,1,"ADV on 1 Attribute Save (Might, Agility, Intelligence, or Charisma).",Checks & Saves,Monster Collection
-DisADV on Attribute Save,-1,"DisADV on 1 Attribute Save (Might, Agility, Intelligence, or Charisma).",Checks & Saves,Monster Collection
-Condition Resistance,1,"ADV on Checks & Saves against 1 Condition",Checks & Saves,Monster Collection
-Condition Vulnerability,-1,"DisADV on Checks & Saves against 1 Condition",Checks & Saves,Monster Collection
-Condition Immunity,2,"Immunity to 1 Condition",Checks & Saves,Monster Collection
+Name,Trait Points,Description,Bonus,Category,Source
+Enrage,4,"Once you become Bloodied, gain +1 damage on all Attacks",0,Offense,Monster Collection
+Opportunist,2,"Deal +1 on Heavy Hits to creatures affected by at least one Condition.",0,Offense,Monster Collection
+Pack Tactics,2,"Gain an additional +2 bonus to Attacks while Flanking a creature.",0,Offense,Monster Collection
+Unrelenting,2,"The only way you can be reduced below 1 HP is by a Heavy Hit or an Attack that deals Radiant damage.",0,Defense,Monster Collection
+Regeneration,2,"Heal 1 HP at the start of each of your turns.",0,Defense,Monster Collection
+Death's Door,2,"This monster can use the Death's Door mechanic like PCs, making near-fatal situations more dramatic and strategic.",0,Defense,Monster Collection
+Shot Caller,2,"When you use the Help Action on another creature, its next Attack deals +1 damage.",0,Utility,Monster Collection
+Inspire,2,"Once per turn, give a Help Die to an allied creature for free.",0,Utility,Monster Collection
+False Appearance,4,"While motionless, you're indistinguishable from a specified object.",0,Utility,Monster Collection
+Attribute Increase,2,"Attribute Increase: +1 to 1 Attribute (up to Prime Modifier).",1,Statistics,Monster Collection
+Attribute Decrease,-2,"Attribute Decrease: -1 to 1 Attribute (minimum of -5).",-1,Statistics,Monster Collection
+Damage Increase,4,"The damage increases based on its Level as shown in the Damage Change Table. This is roughly a 25% increase in damage.",Variable,Statistics,Monster Collection
+Damage Decrease,-4,"The damage decreases based on its Level as shown in the Damage Change Table. This is roughly a 25% decrease in damage.",Variable,Statistics,Monster Collection
+HP Increase,4,"+25% HP",0.25,Statistics,Monster Collection
+HP Decrease,-4,"-25% HP",-0.25,Statistics,Monster Collection
+Defense Increase,1,"+1 to 1 Defense",1,Statistics,Monster Collection
+Defense Decrease,-1,"-1 to 1 Defense",-1,Statistics,Monster Collection
+Speed Increase,1,"+3 Speed",Movement,3,Monster Collection
+Speed Decrease,-1,"-1 Speed",Movement,-1,Monster Collection
+Fly Speed,4,"Fly Speed equal to Speed",0,Movement,Monster Collection
+Burrow Speed,4,"Burrow Speed equal to Speed",0,Movement,Monster Collection
+Swim Speed,2,"Swim Speed equal to Speed and can breath underwater",0,Movement,Monster Collection
+Climb Speed,2,"Climb Speed equal to Speed and Resistance (Half) to Falling Damage",0,Movement,Monster Collection
+Truewalk,2,"You can walk normally on solid surfaces regardless of their orientation (such as upside down on the ceiling) without falling or needing to Climb.",0,Movement,Monster Collection
+Incorporeal,2,"You can move through solid objects and creatures. If you end your turn inside an object or creature, you take True damage equal to 25% of your maximum HP.",0,Movement,Monster Collection
+Darkvision,1,"Darkvision 10 Spaces",10,Senses,Monster Collection
+Tremorsense,2,"Tremorsense 3 Spaces",3,Senses,Monster Collection
+Blindsight,2,"Blindsight 3 Spaces",3,Senses,Monster Collection
+Truesight,4,"Truesight 10 Spaces",10,Senses,Monster Collection
+Damage Reduction,1,"Damage Reduction to Physical, Elemental, or Mystical damage.",0,Damage Mitigation,Monster Collection
+Resistance,2,"Resistance (Half) to 1 damage type.",0,Damage Mitigation,Monster Collection
+Vulnerability,-2,"Vulnerability (Double) to 1 damage type.",0,Damage Mitigation,Monster Collection
+Immunity,4,"Immunity to 1 damage type.",0,Damage Mitigation,Monster Collection
+Absorption,8,"Immunity to 1 damage type and regain HP equal to 1/2 damage.",0,Damage Mitigation,Monster Collection
+ADV on Skill Checks,1,"ADV on 1 Skill Check (such as Awareness, Athletics, or Trickery).",0,Checks & Saves,Monster Collection
+DisADV on Skill Checks,-1,"DisADV on 1 Skill Check (such as Awareness, Athletics, or Trickery).",0,Checks & Saves,Monster Collection
+ADV on Attribute Save,1,"ADV on 1 Attribute Save (Might, Agility, Intelligence, or Charisma).",0,Checks & Saves,Monster Collection
+DisADV on Attribute Save,-1,"DisADV on 1 Attribute Save (Might, Agility, Intelligence, or Charisma).",0,Checks & Saves,Monster Collection
+Condition Resistance,1,"ADV on Checks & Saves against 1 Condition",0,Checks & Saves,Monster Collection
+Condition Vulnerability,-1,"DisADV on Checks & Saves against 1 Condition",0,Checks & Saves,Monster Collection
+Condition Immunity,2,"Immunity to 1 Condition",0,Checks & Saves,Monster Collection
